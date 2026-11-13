@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,56 +10,66 @@
 
 <body>
   <!-- Header Start Now -->
-  <header class="">
-    <div class="mx-auto flex max-w-[1250px] flex-wrap items-center justify-between gap-4 mt-10">
-      <!-- Logo -->
-      <a href="" class="font-bold text-3xl">P-Ticket</a>
+  <header class="px-4">
+    <div class="mx-auto flex max-w-[1250px] flex-col md:flex-row items-center justify-between gap-4 mt-6 sm:mt-10">
+      <!-- Logo & Mobile Action Row -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <a href="#" class="font-bold text-2xl sm:text-3xl text-[#030712]">P-Ticket</a>
+        <!-- Mobile Bus Button -->
+        <a href="#seat-booking-section"
+          class="md:hidden flex items-center gap-2 px-4 py-2 bg-[#1DD1001A] text-[#1DD100] border border-[#1DD100] rounded-xl font-bold text-sm">
+          Bus <img src="/assets/bus-icon.svg" alt="" class="w-4 h-4" />
+        </a>
+      </div>
+
       <!-- Menu -->
-      <nav class="flex gap-4 text-[18px] text-[#030712]">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Destination</a>
-        <a href="">Search</a>
-        <a href="">Contact</a>
+      <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-[15px] sm:text-[18px] text-[#030712] font-medium">
+        <a href="#" class="hover:text-[#1DD100] transition">Home</a>
+        <a href="#" class="hover:text-[#1DD100] transition">About</a>
+        <a href="#" class="hover:text-[#1DD100] transition">Destination</a>
+        <a href="#" class="hover:text-[#1DD100] transition">Search</a>
+        <a href="#" class="hover:text-[#1DD100] transition">Contact</a>
       </nav>
-      <!--  Button-->
-      <a href=""
-        class="flex items-center gap-2 px-[30px] py-[16px] bg-[#1DD1001A] text-[#1DD100] border border-[#1DD100] rounded-xl font-bold">Bus
-        <img src="/assets/bus-icon.svg" alt="" /></a>
+
+      <!-- Desktop Button -->
+      <a href="#seat-booking-section"
+        class="hidden md:flex items-center gap-2 px-7 py-3.5 bg-[#1DD1001A] text-[#1DD100] border border-[#1DD100] rounded-xl font-bold hover:bg-[#1DD100] hover:text-white transition">
+        Bus <img src="/assets/bus-icon.svg" alt="" class="w-5 h-5" />
+      </a>
     </div>
   </header>
   <!-- Header End -->
   <main>
     <!-- banner Start -->
-    <section
-      class="max-w-[1250px] w-full mx-auto mt-8 pt-32 pb-40 relative rounded-[32px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center px-4"
+    <section class="max-w-[1250px] mx-4 sm:mx-auto mt-6 sm:mt-8 px-4 sm:px-6 py-16 sm:py-28 md:py-36 relative rounded-[24px] sm:rounded-[32px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center shadow-sm"
       style="
           background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)),
-            url(/assets/banner\ image.png);
+            url('/assets/banner image.png');
         ">
-      <h1 class="text-white text-[65px] font-extrabold">
+      <h1 class="text-white text-[28px] sm:text-[44px] md:text-[60px] font-extrabold leading-tight">
         End-to-End Travel with<br />
         <span class="text-[#1DD100]">P Paribahan</span>
       </h1>
-      <p class="text-[18px] text-white">
+      <p class="text-[14px] sm:text-[16px] md:text-[18px] text-white mt-4 max-w-[650px] leading-relaxed">
         Yes, you can run unit tests and view the results directly within the
-        app.<br />
+        app.<br class="hidden sm:inline" />
         The integrated testing features allow for a streamlined .
       </p>
-      <button
-        class="bg-[#1DD100] text-black font-bold text-[20px] px-[30px] py-[18px] mt-8 rounded-xl hover:bg-green-500 transition">
+      <a
+        href="#seat-booking-section"
+        class="inline-block bg-[#1DD100] text-black font-bold text-[16px] sm:text-[20px] px-6 py-3 sm:px-[30px] sm:py-[18px] mt-6 sm:mt-8 rounded-xl hover:bg-green-500 transition cursor-pointer">
         Buy Tickets
-      </button>
+      </a>
     </section>
     <!-- banner End -->
     <!-- Card Section Start -->
-    <section class="max-w-[971px] w-full mx-auto px-4 relative z-10 -mt-[69px] mb-24">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section class="max-w-[971px] w-full mx-auto px-4 relative z-10 -mt-8 sm:-mt-[69px] mb-16 sm:mb-24">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
         <!-- Card 1 -->
         <div
-          class="bg-white min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-7 py-6 flex items-center gap-4 shadow-sm">
-          <svg class="w-14 h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+          class="bg-white min-h-[120px] sm:min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-5 sm:px-7 py-5 sm:py-6 flex items-center gap-4 shadow-sm">
+          <svg class="w-12 h-12 sm:w-14 sm:h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
             stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="32" cy="20" r="7" />
             <path d="M20 42c0-6.627 5.373-12 12-12s12 5.373 12 12" />
@@ -69,34 +79,34 @@
             <path d="M57 44c0-4.97-3.582-9-8-9" />
           </svg>
           <div>
-            <h3 class="text-[36px] font-bold text-[#030712] leading-tight">
+            <h3 class="text-[30px] sm:text-[36px] font-bold text-[#030712] leading-tight">
               500K+
             </h3>
-            <p class="text-[18px] text-[#03071299]">Registered users</p>
+            <p class="text-[15px] sm:text-[18px] text-[#03071299]">Registered users</p>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div
-          class="bg-white min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-7 py-6 flex items-center gap-4 shadow-sm">
-          <svg class="w-14 h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+          class="bg-white min-h-[120px] sm:min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-5 sm:px-7 py-5 sm:py-6 flex items-center gap-4 shadow-sm">
+          <svg class="w-12 h-12 sm:w-14 sm:h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
             stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <path
               d="M10 22a4 4 0 0 1 4-4h36a4 4 0 0 1 4 4v5a5 5 0 0 0 0 10v5a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4v-5a5 5 0 0 0 0-10v-5Z" />
             <path d="M26 18v28" stroke-dasharray="4 4" />
           </svg>
           <div>
-            <h3 class="text-[36px] font-bold text-[#030712] leading-tight">
+            <h3 class="text-[30px] sm:text-[36px] font-bold text-[#030712] leading-tight">
               1.7 lacks
             </h3>
-            <p class="text-[18px] text-[#03071299]">Tickets sold</p>
+            <p class="text-[15px] sm:text-[18px] text-[#03071299]">Tickets sold</p>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div
-          class="bg-white min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-7 py-6 flex items-center gap-4 shadow-sm">
-          <svg class="w-14 h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+          class="bg-white min-h-[120px] sm:min-h-[138px] rounded-[24px] border border-[#0307121A] border-b-[3px] border-b-[#1DD100] px-5 sm:px-7 py-5 sm:py-6 flex items-center gap-4 shadow-sm">
+          <svg class="w-12 h-12 sm:w-14 sm:h-14 text-[#1DD100] shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor"
             stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 18v32" />
             <rect x="8" y="14" width="8" height="10" rx="2" />
@@ -106,44 +116,44 @@
             <circle cx="47" cy="46" r="4" />
           </svg>
           <div>
-            <h3 class="text-[36px] font-bold text-[#030712] leading-tight">
+            <h3 class="text-[30px] sm:text-[36px] font-bold text-[#030712] leading-tight">
               80K+
             </h3>
-            <p class="text-[18px] text-[#03071299]">Rental partners</p>
+            <p class="text-[15px] sm:text-[18px] text-[#03071299]">Rental partners</p>
           </div>
         </div>
       </div>
     </section>
     <!-- Card Section End -->
     <!-- Offer Section Start -->
-    <section class="max-w-[1250px] mx-auto px-4 mb-24">
-      <h2 class="text-[40px] text-center font-bold text-[#030712] mb-12">
+    <section class="max-w-[1250px] mx-auto px-4 mb-16 sm:mb-24">
+      <h2 class="text-[28px] sm:text-[36px] md:text-[40px] text-center font-bold text-[#030712] mb-8 sm:mb-12">
         Best offers for you
       </h2>
       <!-- Coupon Container Start -->
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
         <!-- Card 1 -->
         <div
-          class="bg-[#FFBF0F] rounded-[24px] p-8 md:p-12 flex items-center justify-between relative overflow-hidden shadow-sm">
-          <div class="space-y-2">
-            <h3 class="text-[32px] md:text-[40px] font-black text-[#030712CC] leading-none">
+          class="bg-[#FFBF0F] rounded-[24px] p-5 sm:p-8 md:p-12 flex items-center justify-between relative overflow-hidden shadow-sm">
+          <div class="space-y-1 sm:space-y-2">
+            <h3 class="text-[26px] sm:text-[34px] md:text-[40px] font-black text-[#030712CC] leading-none">
               15% OFF
             </h3>
-            <p class="text-[18px] md:text-[20px] text-[#030712CC] font-semibold">
+            <p class="text-[14px] sm:text-[18px] md:text-[20px] text-[#030712CC] font-semibold">
               on your next purchase
             </p>
-            <p class="text-[14px] md:text-[16px] text-[#03071280]">
+            <p class="text-[12px] sm:text-[14px] md:text-[16px] text-[#03071280]">
               use by January 2024
             </p>
           </div>
           <!-- Divider -->
-          <div class="h-28 border-l-2 border-dashed border-white mx-4 md:mx-6"></div>
+          <div class="h-24 sm:h-28 border-l-2 border-dashed border-white mx-3 sm:mx-6"></div>
           <!-- Right Coupon Code -->
-          <div class="text-center min-w-[110px] md:min-w-[130px]">
-            <h4 class="text-[24px] md:text-[32px] font-bold text-[#030712CC]">
+          <div class="text-center min-w-[95px] sm:min-w-[130px]">
+            <h4 class="text-[20px] sm:text-[28px] md:text-[32px] font-bold text-[#030712CC]">
               NEW15
             </h4>
-            <p class="text-[14px] md:text-[16px] text-[#03071280]">
+            <p class="text-[12px] sm:text-[14px] md:text-[16px] text-[#03071280]">
               Coupon Code
             </p>
           </div>
@@ -151,26 +161,26 @@
 
         <!-- Card 2 -->
         <div
-          class="bg-[#F78C9C] rounded-[24px] p-8 md:p-12 flex items-center justify-between relative overflow-hidden shadow-sm">
-          <div class="space-y-2">
-            <h3 class="text-[32px] md:text-[40px] font-black text-[#030712CC] leading-none">
+          class="bg-[#F78C9C] rounded-[24px] p-5 sm:p-8 md:p-12 flex items-center justify-between relative overflow-hidden shadow-sm">
+          <div class="space-y-1 sm:space-y-2">
+            <h3 class="text-[26px] sm:text-[34px] md:text-[40px] font-black text-[#030712CC] leading-none">
               20% OFF
             </h3>
-            <p class="text-[18px] md:text-[20px] font-semibold text-[#030712CC]">
+            <p class="text-[14px] sm:text-[18px] md:text-[20px] font-semibold text-[#030712CC]">
               on your next purchase
             </p>
-            <p class="text-[14px] md:text-[16px] text-[#03071280]">
+            <p class="text-[12px] sm:text-[14px] md:text-[16px] text-[#03071280]">
               use by January 2024
             </p>
           </div>
           <!-- Divider -->
-          <div class="h-28 border-l-2 border-dashed border-white mx-4 md:mx-6"></div>
+          <div class="h-24 sm:h-28 border-l-2 border-dashed border-white mx-3 sm:mx-6"></div>
           <!-- Right Coupon Code -->
-          <div class="text-center min-w-[110px] md:min-w-[130px]">
-            <h4 class="text-[24px] md:text-[32px] font-bold text-[#030712CC]">
+          <div class="text-center min-w-[95px] sm:min-w-[130px]">
+            <h4 class="text-[20px] sm:text-[28px] md:text-[32px] font-bold text-[#030712CC]">
               Couple 20
             </h4>
-            <p class="text-[14px] md:text-[16px] text-[#03071280]">
+            <p class="text-[12px] sm:text-[14px] md:text-[16px] text-[#03071280]">
               Coupon Code
             </p>
           </div>
@@ -179,9 +189,9 @@
       <!-- Coupon Container End -->
 
       <!-- Button -->
-      <div class="text-center mt-12">
+      <div class="text-center mt-8 sm:mt-12">
         <button
-          class="inline-block border border-[#1DD100] text-[#1DD100] font-bold text-[20px] px-8 py-4 rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-200 cursor-pointer">
+          class="inline-block border border-[#1DD100] text-[#1DD100] font-bold text-[16px] sm:text-[20px] px-6 py-3 sm:px-8 sm:py-4 rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-200 cursor-pointer">
           See All Offers
         </button>
       </div>
@@ -194,19 +204,19 @@
       - bg-[#F7F8F8]: হালকা ছাই রঙের ব্যাকগ্রাউন্ড
       - rounded-t-[88px]: ওপরের দুই কোণা কার্ভড/গোল করা
     -->
-    <section class="border-t-2 border-[#1DD100] bg-[#F7F8F8] rounded-t-[88px] pt-28 pb-28 mt-16">
+    <section class="border-t-2 border-[#1DD100] bg-[#F7F8F8] rounded-t-[40px] sm:rounded-t-[60px] md:rounded-t-[88px] pt-14 pb-14 sm:pt-20 sm:pb-20 md:pt-28 md:pb-28 mt-12 sm:mt-16">
       <div class="max-w-[1170px] mx-auto px-4">
         
         <!-- ১. সেকশন টাইটেল ও সাব-টাইটেল (Title & Description) -->
-        <div class="text-center mb-12">
-          <h2 class="text-[40px] font-bold text-[#030712] mb-4">P.H Paribahan</h2>
-          <p class="text-[18px] text-[#03071299] max-w-[736px] mx-auto leading-relaxed">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2 class="text-[28px] sm:text-[36px] md:text-[40px] font-bold text-[#030712] mb-3 sm:mb-4">P.H Paribahan</h2>
+          <p class="text-[14px] sm:text-[16px] md:text-[18px] text-[#03071299] max-w-[736px] mx-auto leading-relaxed">
             Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
           </p>
         </div>
 
         <!-- ২. মূল টিকিট কার্ড (Main White Ticket Card) -->
-        <div class="bg-white rounded-[32px] p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between shadow-sm relative">
+        <div class="bg-white rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between shadow-sm relative">
           
           <!-- ========== বাম পাশ: বাসের বিবরণ ও রুট বক্স ========== -->
           <div class="flex-1 w-full lg:pr-8">
@@ -215,32 +225,32 @@
             <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
               
               <!-- বাস লোগো এবং বাসের নাম -->
-              <div class="flex items-center gap-4">
-                <img src="/assets/bus-logo.svg" alt="Bus Logo" class="w-16 h-auto shrink-0" />
+              <div class="flex items-center gap-3 sm:gap-4">
+                <img src="/assets/bus-logo.svg" alt="Bus Logo" class="w-12 sm:w-16 h-auto shrink-0" />
                 <div>
-                  <h3 class="text-[28px] md:text-[32px] font-bold text-[#030712] leading-tight">
+                  <h3 class="text-[22px] sm:text-[28px] md:text-[32px] font-bold text-[#030712] leading-tight">
                     Greenline Paribahan
                   </h3>
-                  <p class="text-[16px] md:text-[18px] text-[#03071299] mt-1 font-medium">
+                  <p class="text-[14px] sm:text-[16px] md:text-[18px] text-[#03071299] mt-0.5 sm:mt-1 font-medium">
                     Coach-009-WEB ! AC_Business
                   </p>
                 </div>
               </div>
 
               <!-- কয়টি সিট বাকি আছে (Seats Left Green Badge) -->
-              <div class="flex items-center gap-2 bg-[#1DD1001A] px-4 py-3 rounded-xl">
-                <img src="/assets/seat-green.svg" alt="Seat Icon" class="w-6 h-6 shrink-0" />
-                <span class="text-[#1DD100] font-semibold text-[16px] md:text-[18px]">
+              <div class="flex items-center gap-2 bg-[#1DD1001A] px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl">
+                <img src="/assets/seat-green.svg" alt="Seat Icon" class="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
+                <span class="text-[#1DD100] font-semibold text-[14px] sm:text-[16px] md:text-[18px]">
                   <span id="available-seats">40</span> Seats left
                 </span>
               </div>
             </div>
 
             <!-- ধূসর রঙের রুট ডিটেইলস কার্ড (Gray Route Card) -->
-            <div class="bg-[#F7F8F8] rounded-[24px] p-6 md:p-8 space-y-4">
+            <div class="bg-[#F7F8F8] rounded-[20px] sm:rounded-[24px] p-4 sm:p-6 md:p-8 space-y-3 sm:space-y-4">
               
               <!-- রুট ইনফো -->
-              <div class="flex justify-between items-center text-[18px]">
+              <div class="flex justify-between items-center text-[15px] sm:text-[18px]">
                 <span class="text-[#03071299] font-medium">Route</span>
                 <span class="text-[#030712] font-bold">Dhaka - Sylhet</span>
               </div>
@@ -249,7 +259,7 @@
               <div class="border-b border-dashed border-[#03071233]"></div>
 
               <!-- সময় ইনফো -->
-              <div class="flex justify-between items-center text-[18px]">
+              <div class="flex justify-between items-center text-[15px] sm:text-[18px]">
                 <span class="text-[#03071299] font-medium">Departure Time</span>
                 <span class="text-[#030712] font-bold">9:00 PM</span>
               </div>
@@ -258,14 +268,14 @@
               <div class="border-b border-dashed border-[#03071233]"></div>
 
               <!-- ৩টি তথ্য বক্স (Boarding, Dropping, Est. Time) -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[16px] py-4 px-3 rounded-xl text-center">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-1 sm:pt-2">
+                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[13px] sm:text-[15px] md:text-[16px] py-3 sm:py-4 px-2 sm:px-3 rounded-xl text-center">
                   Boarding Point - Laxmipur
                 </div>
-                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[16px] py-4 px-3 rounded-xl text-center">
+                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[13px] sm:text-[15px] md:text-[16px] py-3 sm:py-4 px-2 sm:px-3 rounded-xl text-center">
                   Dropping Point - Bogura
                 </div>
-                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[16px] py-4 px-3 rounded-xl text-center">
+                <div class="bg-[#0307120D] text-[#030712CC] font-semibold text-[13px] sm:text-[15px] md:text-[16px] py-3 sm:py-4 px-2 sm:px-3 rounded-xl text-center">
                   Est. Time - 11 Hour
                 </div>
               </div>
@@ -287,20 +297,20 @@
           </div>
 
           <!-- মোবাইল স্ক্রিনের আনুভূমিক ডিভাইডার -->
-          <div class="w-full border-b-2 border-dashed border-[#1DD100] my-8 lg:hidden"></div>
+          <div class="w-full border-b-2 border-dashed border-[#1DD100] my-6 sm:my-8 lg:hidden"></div>
 
           <!-- ========== ডান পাশ: টিকিটের মূল্য (Right Price Section) ========== -->
-          <div class="flex flex-col items-center justify-center text-center lg:px-8 py-4 min-w-[220px]">
+          <div class="flex flex-col items-center justify-center text-center lg:px-8 py-3 sm:py-4 min-w-[200px]">
             <!-- টাকা আইকন (৳ চিহ্ন) -->
-            <div class="w-14 h-14 bg-[#1DD100] text-white rounded-full flex items-center justify-center font-bold text-3xl shadow-sm mb-4">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#1DD100] text-white rounded-full flex items-center justify-center font-bold text-2xl sm:text-3xl shadow-sm mb-3 sm:mb-4">
               ৳
             </div>
             <!-- মূল্য -->
-            <h3 class="text-[32px] font-bold text-[#030712] leading-none mb-2">
+            <h3 class="text-[26px] sm:text-[32px] font-bold text-[#030712] leading-none mb-1.5 sm:mb-2">
               550 Taka
             </h3>
             <!-- পার সিট -->
-            <p class="text-[18px] text-[#03071299] font-medium">
+            <p class="text-[15px] sm:text-[18px] text-[#03071299] font-medium">
               Per Seat
             </p>
           </div>
@@ -308,11 +318,418 @@
         </div>
         <!-- টিকিট কার্ড শেষ -->
 
+        <!-- ============================================================== -->
+        <!-- ৩. সিট সিলেকশন ও বুকিং ফর্ম (Seat Selection & Booking Card)   -->
+        <!-- ============================================================== -->
+        <div id="seat-booking-section" class="bg-white rounded-[24px] sm:rounded-[32px] p-4 sm:p-8 md:p-12 mt-6 sm:mt-8 shadow-sm">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            
+            <!-- ------------------------------------------------------------- -->
+            <!-- বাম কলাম: সিট সিলেকশন গ্রিড (Left Column: Seat Layout)       -->
+            <!-- ------------------------------------------------------------- -->
+            <div class="lg:col-span-7 lg:border-r lg:border-dashed lg:border-[#03071233] lg:pr-8">
+              
+              <!-- হেডিং -->
+              <h3 class="text-[20px] sm:text-[24px] font-bold text-[#030712] pb-4">
+                Select Your Seat
+              </h3>
+
+              <!-- সিট স্ট্যাটাস ইন্ডিকেটর (Available & Selected) -->
+              <div class="flex justify-between items-center py-3.5 sm:py-4 border-y border-dashed border-[#03071233]">
+                <!-- খালি সিট (Available) -->
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#03071280]" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 13c.6 0 1.2.2 1.6.7.5.4.7 1 .7 1.6v4.7c0 .6-.2 1.2-.7 1.6-.4.5-1 .7-1.6.7H6c-.6 0-1.2-.2-1.6-.7-.5-.4-.7-1-.7-1.6V15c0-.6.2-1.2.7-1.6.4-.5 1-.7 1.6-.7.6 0 1.2.2 1.6.7.5.4.7 1 .7 1.6V18h12v-2.7c0-.6.2-1.2.7-1.6.4-.5 1-.7 1.6-.7zM6 13V7c0-1 .4-1.8 1-2.5C7.8 3.8 8.7 3.5 9.7 3.5h8.6c1 0 1.9.3 2.5 1 .7.7 1.1 1.5 1.1 2.5v6M7 22v3M21 22v3"/>
+                  </svg>
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px]">Available</span>
+                </div>
+
+                <!-- সিলেক্টেড সিট (Selected) -->
+                <div class="flex items-center gap-2">
+                  <img src="/assets/seat-green.svg" alt="Selected Seat Icon" class="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span class="text-[#1DD100] font-semibold text-[14px] sm:text-[16px]">Selected</span>
+                </div>
+              </div>
+
+              <!-- ড্রাইভার / স্টিয়ারিং হুইল আইকন -->
+              <div class="flex justify-end my-5 sm:my-6">
+                <div class="w-20 sm:w-24 h-10 sm:h-12 bg-[#0307121A] rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#030712B2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <circle cx="12" cy="12" r="2" />
+                    <path d="M12 14v7" />
+                    <path d="M10.2 10.5L4.5 7.5" />
+                    <path d="M13.8 10.5l5.7-3" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- সিটের সারিগুলো (A থেকে J পর্যন্ত মোট ৪০টি সিট) -->
+              <div class="space-y-3 sm:space-y-4">
+                
+                <!-- Row A -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">A</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">A1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">A2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">A3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">A4</button>
+                  </div>
+                </div>
+
+                <!-- Row B -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">B</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">B1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">B2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">B3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">B4</button>
+                  </div>
+                </div>
+
+                <!-- Row C -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">C</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">C1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">C2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">C3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">C4</button>
+                  </div>
+                </div>
+
+                <!-- Row D -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">D</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">D1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">D2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">D3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">D4</button>
+                  </div>
+                </div>
+
+                <!-- Row E -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">E</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">E1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">E2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">E3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">E4</button>
+                  </div>
+                </div>
+
+                <!-- Row F -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">F</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">F1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">F2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">F3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">F4</button>
+                  </div>
+                </div>
+
+                <!-- Row G -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">G</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">G1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">G2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">G3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">G4</button>
+                  </div>
+                </div>
+
+                <!-- Row H -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">H</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">H1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">H2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">H3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">H4</button>
+                  </div>
+                </div>
+
+                <!-- Row I -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">I</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">I1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">I2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">I3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">I4</button>
+                  </div>
+                </div>
+
+                <!-- Row J -->
+                <div class="flex items-center gap-2 sm:gap-6">
+                  <span class="text-[#03071280] font-medium text-[14px] sm:text-[16px] w-5 sm:w-6 text-center">J</span>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">J1</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">J2</button>
+                  </div>
+                  <div class="w-2 sm:w-8"></div>
+                  <div class="grid grid-cols-2 gap-2 sm:gap-6 flex-1">
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">J3</button>
+                    <button class="seat-btn bg-[#F7F8F8] text-[#03071280] font-medium text-[13px] sm:text-[16px] py-2 sm:py-3 rounded-lg sm:rounded-xl hover:bg-[#1DD100] hover:text-white transition duration-150 cursor-pointer">J4</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- ------------------------------------------------------------- -->
+            <!-- ডান কলাম: মূল্য হিসাব ও বুকিং ফর্ম (Right: Price & Form)    -->
+            <!-- ------------------------------------------------------------- -->
+            <div class="lg:col-span-5">
+              
+              <!-- হেডিং -->
+              <h3 class="text-[20px] sm:text-[24px] font-bold text-[#030712] pb-4">
+                Select Your Seat
+              </h3>
+
+              <!-- ক্যালকুলেশন কার্ড (Calculation Card) -->
+              <div class="bg-[#F7F8F8] rounded-[20px] sm:rounded-[24px] p-4 sm:p-6 md:p-8 mt-4">
+                
+                <!-- টেবিল হেডার (Seat, Class, Price) -->
+                <div class="flex justify-between font-bold text-[#030712] text-[15px] sm:text-[16px] pb-4 border-b border-dashed border-[#03071233]">
+                  <div class="flex items-center gap-1">
+                    <span>Seat</span>
+                    <!-- সিলেক্ট করা সিটের সংখ্যা ব্যাজ -->
+                    <span id="selected-seat-count" class="bg-[#1DD100] text-white text-xs px-2 py-0.5 rounded-full font-bold">0</span>
+                  </div>
+                  <span>Class</span>
+                  <span>Price</span>
+                </div>
+
+                <!-- সিলেক্ট করা সিটের ডাইনামিক লিস্ট (জাভাস্ক্রিপ্ট দিয়ে আপডেট হবে) -->
+                <div id="selected-seats-list" class="py-4 space-y-3 text-[#03071299] text-[15px] sm:text-[16px] font-medium border-b border-[#03071233]">
+                  <!-- প্রাথমিক বার্তা -->
+                  <p id="no-seat-msg" class="text-sm text-center text-[#03071266]">No seat selected yet</p>
+                </div>
+
+                <!-- মোট মূল্য (Total Price) -->
+                <div class="flex justify-between font-semibold text-[#030712] text-[15px] sm:text-[16px] pt-4">
+                  <span>Total Price</span>
+                  <span>BDT <span id="total-price">0</span></span>
+                </div>
+
+                <!-- কুপন ডিসকাউন্ট রো (কুপন প্রয়োগের পর জাভাস্ক্রিপ্ট দিয়ে দৃশ্যমান হবে) -->
+                <div id="discount-row" class="hidden flex justify-between font-semibold text-[#1DD100] text-[15px] sm:text-[16px] pt-3">
+                  <span>Discount</span>
+                  <span>- BDT <span id="discount-price">0</span></span>
+                </div>
+
+                <!-- কুপন ইনপুট বক্স (Coupon Input & Apply Button) -->
+                <div id="coupon-container" class="bg-white rounded-xl p-2 flex flex-col sm:flex-row items-center gap-2 mt-4">
+                  <input 
+                    id="coupon-input" 
+                    type="text" 
+                    placeholder="Have any copupon?" 
+                    class="w-full px-3 py-2 outline-none text-[14px] text-[#030712] placeholder-[#03071266]"
+                  />
+                  <button 
+                    id="coupon-btn" 
+                    class="w-full sm:w-auto bg-[#1DD100] text-white font-semibold text-[15px] sm:text-[16px] px-6 py-2.5 sm:py-3 rounded-lg hover:bg-green-600 transition duration-200 cursor-pointer disabled:opacity-50 shrink-0"
+                  >
+                    Apply
+                  </button>
+                </div>
+
+                <!-- সর্বমোট মূল্য (Grand Total) -->
+                <div class="flex justify-between font-bold text-[#030712] text-[15px] sm:text-[16px] pt-4">
+                  <span>Grand Total</span>
+                  <span>BDT <span id="grand-total">0</span></span>
+                </div>
+
+              </div>
+
+              <!-- বুকিং ফর্ম (Passenger Information Form) -->
+              <div class="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
+                
+                <!-- প্যাসেঞ্জার নাম -->
+                <div>
+                  <label class="block font-bold text-[#030712] text-[15px] sm:text-[16px] mb-2">Passenger Name*</label>
+                  <input 
+                    id="passenger-name"
+                    type="text" 
+                    placeholder="Enter your name" 
+                    class="w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl border border-[#0307121A] bg-white outline-none focus:border-[#1DD100] text-[15px] sm:text-[16px] placeholder-[#03071266]"
+                  />
+                </div>
+
+                <!-- ফোন নম্বর -->
+                <div>
+                  <label class="block font-bold text-[#030712] text-[15px] sm:text-[16px] mb-2">Phone Number*</label>
+                  <input 
+                    id="passenger-phone"
+                    type="number" 
+                    placeholder="Enter your phone number" 
+                    class="w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl border border-[#0307121A] bg-white outline-none focus:border-[#1DD100] text-[15px] sm:text-[16px] placeholder-[#03071266]"
+                  />
+                </div>
+
+                <!-- ইমেইল আইডি -->
+                <div>
+                  <label class="block font-bold text-[#030712] text-[15px] sm:text-[16px] mb-2">Email ID</label>
+                  <input 
+                    id="passenger-email"
+                    type="email" 
+                    placeholder="Enter your email id" 
+                    class="w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl border border-[#0307121A] bg-white outline-none focus:border-[#1DD100] text-[15px] sm:text-[16px] placeholder-[#03071266]"
+                  />
+                </div>
+
+                <!-- Next বাটন -->
+                <button 
+                  id="next-btn"
+                  class="w-full bg-[#1DD100] text-white font-bold text-[18px] sm:text-[20px] py-3.5 sm:py-4 rounded-xl sm:rounded-2xl hover:bg-green-600 transition duration-200 cursor-pointer"
+                >
+                  Next
+                </button>
+
+                <!-- টার্মস এবং পলিসি লিংক -->
+                <div class="flex justify-around text-[13px] sm:text-[14px] text-[#03071299] pt-2">
+                  <a href="#" class="underline hover:text-[#1DD100]">Terms and Conditions</a>
+                  <a href="#" class="underline hover:text-[#1DD100]">Cancellation Policy</a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- সিট সিলেকশন কার্ড শেষ -->
+
       </div>
     </section>
     <!-- Pariabahan Section end -->
+
+    <!-- ==================== Success Modal (বুকিং কনফার্মেশন পপআপ মডাল) ==================== -->
+    <div id="success-modal" class="fixed inset-0 bg-[#030712B2] flex items-center justify-center z-50 hidden px-4">
+      <div class="bg-white rounded-[24px] p-6 sm:p-10 md:p-12 max-w-[500px] w-full text-center space-y-4 sm:space-y-5 shadow-2xl">
+        <!-- সবুজ টিক আইকন -->
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-[#1DD1001A] text-[#1DD100] rounded-full flex items-center justify-center mx-auto">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4 class="text-[#1DD100] font-bold text-[20px] sm:text-[24px]">SUCCESS</h4>
+        <p class="font-bold text-[#030712] text-[16px] sm:text-[18px]">
+          Thank you for Booking Our Bus Seats.
+        </p>
+        <p class="text-[#03071299] text-[14px] sm:text-[16px] leading-relaxed">
+          We are working hard to find the best service and deals for you. Shortly you will find a confirmation in your email.
+        </p>
+        <button id="modal-close-btn" class="bg-[#1DD100] text-white font-bold text-[16px] sm:text-[18px] px-8 sm:px-12 py-3 rounded-full hover:bg-green-600 transition duration-200 cursor-pointer">
+          Continue
+        </button>
+      </div>
+    </div>
   </main>
-  <footer></footer>
+  <!-- ============================================================== -->
+  <!-- Footer Section Start                                           -->
+  <!-- ============================================================== -->
+  <!-- 
+    - bg-[#030712]: গাড় কালো ব্যাকগ্রাউন্ড (ফিগমা ডিজাইন অনুযায়ী)
+    - text-white: সাদা টেক্সট
+    - py-14 sm:py-24: ওপরে ও নিচে পর্যাপ্ত প্যাডিং
+  -->
+  <footer class="bg-[#030712] text-white py-14 sm:py-24">
+    <div class="max-w-[1170px] mx-auto px-4">
+      
+      <!-- ১. ওপরের অংশ: লোগো, স্লোগান এবং অ্যাপ ডাউনলোড বাটন -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-12 border-b border-dashed border-[#FFFFFF4D]">
+        
+        <!-- বাম পাশ: লোগো ও বর্ণনা -->
+        <div class="space-y-4 max-w-[375px]">
+          <h2 class="text-[36px] font-extrabold text-white">P-Ticket</h2>
+          <p class="text-[18px] text-[#FFFFFFCC] leading-relaxed">
+            P-Ticket is a digital platform to make your daily commuting better.
+          </p>
+        </div>
+
+        <!-- ডান পাশ: গুগল প্লে অ্যাপ ডাউনলোড বক্স -->
+        <div class="space-y-3">
+          <p class="text-[20px] font-medium text-white">Download our app</p>
+          
+          <a href="#" class="inline-flex items-center gap-3 border border-white/30 rounded-xl px-5 py-3 bg-black hover:border-white transition duration-200">
+            <!-- Google Play Store আইকন (SVG) -->
+            <svg class="w-8 h-8 shrink-0" viewBox="0 0 24 24" fill="none">
+              <path d="M3.6 2.4A2 2 0 0 0 3 3.8v16.4c0 .6.2 1.1.6 1.4l9.7-9.7L3.6 2.4z" fill="#00D2FF"/>
+              <path d="M16.9 15.5l-3.6-3.6L3.6 21.6c.4.2 1 .2 1.5-.1l11.8-6z" fill="#00F076"/>
+              <path d="M16.9 8.5L5.1 2.5C4.6 2.2 4 2.2 3.6 2.4l9.7 9.7 3.6-3.6z" fill="#FF3A44"/>
+              <path d="M21.2 10.7l-4.3-2.2-3.6 3.6 3.6 3.6 4.3-2.2c.8-.4.8-2.4 0-2.8z" fill="#FFC400"/>
+            </svg>
+            
+            <div class="text-left">
+              <p class="text-[10px] tracking-wider uppercase font-semibold text-white/80 leading-none">GET IT ON</p>
+              <p class="text-[16px] font-bold text-white leading-tight mt-0.5">Google Play</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ২. নিচের অংশ: কপিরাইট এবং পলিসি লিংকগুলো -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 text-[16px] text-[#FFFFFFCC]">
+        <!-- কপিরাইট টেক্সট -->
+        <p class="text-center md:text-left">
+          @all rights reserved, P-Ticket services limited.2024
+        </p>
+
+        <!-- পলিসি লিংকসমূহ -->
+        <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-medium">
+          <a href="#" class="hover:text-white transition duration-150">Terms & conditions</a>
+          <a href="#" class="hover:text-white transition duration-150">Return & refund policy</a>
+          <a href="#" class="hover:text-white transition duration-150">Privacy policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- ============================================================== -->
+  <!-- Footer Section End                                             -->
+  <!-- ============================================================== -->
+
+  <!-- JavaScript File Linked -->
+  <script src="script.js"></script>
 </body>
 
 </html>
